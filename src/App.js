@@ -1,23 +1,22 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ChatView from './pages/chatview';
+import LearningContent from './pages/learningcontent';
 
 function App() {
+  const [apiKey, setApiKey] = useState('');
+  const [role, setRole] = useState('You are a helpful assistant.');
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="chat-view-container">
+        <ChatView apiKey={apiKey} role={role} />
+      </div>
+      <div className="learning-content-container">
+        <LearningContent setApiKey={setApiKey} apiKey={apiKey} setRole={setRole} role={role} />
+      </div>
     </div>
   );
 }

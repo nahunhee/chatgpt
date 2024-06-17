@@ -1,0 +1,45 @@
+.learning-content {
+    padding: 20px;
+}
+
+.learning-content h1 {
+    margin-bottom: 20px;
+}
+
+.learning-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.api-key-container,
+.role-container {
+    margin-bottom: 20px;
+}
+
+.api-key-container input,
+.role-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: calc(100% - 150px);
+}
+
+.api-key-container button,
+.role-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.api-key-container button:hover,
+.role-container button:hover {
+    background-color: #0056b3;
+}
+
+.role-container textarea {
+    resize: none;
+}
